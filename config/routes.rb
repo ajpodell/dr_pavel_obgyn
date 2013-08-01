@@ -1,6 +1,20 @@
 DrPavelObgyn::Application.routes.draw do
 
+  resources :users
+  resources :sessions
+  resources :insurances, only: [:index]
+
+  get "users/new"
+  # get "insurances/destroy", via: :delete
+
+
   root to: 'static_pages#home'
+  match 'hours', to: 'static_pages#hours'
+  match 'insurance', to: 'insurances#index'
+
+  match '/signin', to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
+
   # get "/assets/images/bg-linear-nav.png"
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -12,6 +12,8 @@
  *= require_tree .
  */
 
+@import "bootstrap";
+
 html {
 	height: 100%;
 }
@@ -32,4 +34,8 @@ body {
 	width: 960px;
 	margin-top: -7px;
 	margin-left: 19px;	
+}
+
+.title-header {
+	margin: 0;
 }

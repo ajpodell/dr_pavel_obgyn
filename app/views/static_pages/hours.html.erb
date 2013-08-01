@@ -1,0 +1,24 @@
+<% provide :title, 'Hours' %>
+
+<% if false %>
+	<% content_for :javascript_includes do %>
+		<%= javascript_include_tag "http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" %>
+	<% end %>
+<% end %>
+
+
+<!-- <a href='#' id="alert">Click me</a> -->
+
+<table class="content">
+	<tr>	
+		<td width="300px">
+			<div id="map-canvas"></div>
+		</td>
+
+		<td width="75px">
+		</td>
+
+		<td>
+			<iframe width="425" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=57+Willowbrook+Blvd,+Wayne,+NJ&amp;aq=0&amp;oq=57+willow&amp;sll=37.0625,-95.677068&amp;sspn=38.638819,86.572266&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=57+Willowbrook+Blvd,+Wayne,+Passaic,+New+Jersey+07470&amp;ll=40.895284,-74.246893&amp;spn=0.025952,0.036564&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=57+Willowbrook+Blvd,+Wayne,+NJ&amp;aq=0&amp;oq=57+willow&amp;sll=37.0625,-95.677068&amp;sspn=38.638819,86.572266&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=57+Willowbrook+Blvd,+Wayne,+Passaic,+New+Jersey+07470&amp;ll=40.895284,-74.246893&amp;spn=0.025952,0.036564&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+		</td>
+</table>
