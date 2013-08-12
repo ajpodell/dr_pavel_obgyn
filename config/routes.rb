@@ -2,7 +2,7 @@ DrPavelObgyn::Application.routes.draw do
 
   resources :users
   resources :sessions
-  resources :insurances, only: [:index]
+  #resources :insurances, only: [:index]
 
   get "users/new"
   # get "insurances/destroy", via: :delete
@@ -10,7 +10,7 @@ DrPavelObgyn::Application.routes.draw do
 
   root to: 'static_pages#home'
   match 'hours', to: 'static_pages#hours'
-  match 'insurance', to: 'insurances#index'
+  #match 'insurance', to: 'insurances#index'
 
   match '/signin', to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
